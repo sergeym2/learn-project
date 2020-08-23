@@ -1,0 +1,314 @@
+.exel__header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 34px;
+  padding: 8px 4px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.exel__header .input {
+  margin: 0;
+  min-width: 1px;
+  padding: 2px 5px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  height: 20px;
+  font-size: 18px;
+  line-height: 22px;
+  outline: none;
+}
+
+.exel__header .input:hover {
+  border: 1px solid #eee;
+}
+
+.exel__header .input:focus {
+  border: 2px solid #1a73e8;
+  border-radius: 3px;
+}
+
+.exel__header .button > i {
+  font-size: 18px;
+  margin-left: 10px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.exel__header .button {
+  height: 24px;
+  min-width: 24px;
+  padding: 3px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.exel__header .button > a {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.exel__header .button > a:active, .exel__header .button > a.active {
+  color: red;
+}
+
+.exel__header .button > a:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.exel__toolbar {
+  position: absolute;
+  top: 34px;
+  right: 0;
+  left: 0;
+  height: 40px;
+  border-top: 2px solid #c0c0c0;
+  border-bottom: 2px solid #c0c0c0;
+  padding: 7px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.exel__toolbar .button {
+  height: 24px;
+  min-width: 24px;
+  padding: 3px;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.exel__toolbar .button > a {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.exel__toolbar .button > a:active, .exel__toolbar .button > a.active {
+  color: green;
+}
+
+.exel__toolbar .button > a:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.exel__formula {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 74px;
+  height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #c0c0c0;
+}
+
+.exel__formula .formula__info {
+  font-size: 18px;
+  font-style: italic;
+  text-align: center;
+  border-right: 2px solid #c0c0c0;
+  min-width: 40px;
+}
+
+.exel__formula .formula__input {
+  padding: 4px;
+  outline: none;
+  font-size: 12px;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.exel__table {
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 98px;
+  width: 100%;
+  overflow-x: auto;
+  padding-bottom: 2px;
+}
+
+.exel__table .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 20px;
+  height: 24px;
+}
+
+.exel__table .row_info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40px;
+  height: 100%;
+  border: 1px solid #c0c0c0;
+  background: #f8f9fa;
+  border-top: none;
+}
+
+.exel__table .row_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.exel__table .column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 40px;
+  width: 120px;
+  border: 1px solid #c0c0c0;
+  height: 100%;
+  border-top: 0;
+  border-left: 0;
+}
+
+.exel__table .cell {
+  min-width: 40px;
+  padding: 5px;
+  width: 120px;
+  height: 100%;
+  border: 1px solid #e2e3e3;
+  text-align: center;
+  border-top: 0;
+  border-left: 0;
+  color: #111;
+  white-space: nowrap;
+  outline: none;
+}
+
+.exel__table .cell.selected {
+  border: none;
+  outline: 2px solid #3c74ff;
+  z-index: 2;
+}
+
+.db__header {
+  position: fixed;
+  right: 0;
+  top: 0;
+  left: 0;
+  height: 64px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
+          box-shadow: 0 2px 5px 2px rgba(60, 64, 67, 0.15);
+  z-index: 1000;
+}
+
+.db_new {
+  padding: 1.5rem;
+  margin-top: 64px;
+  background: #dadce0;
+}
+
+.db__create {
+  width: 160px;
+  height: 160px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #dadce0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.db__create:hover {
+  cursor: pointer;
+  color: green;
+  border-color: green;
+}
+
+.db__view {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.db_table {
+  padding: 1rem;
+}
+
+.db-list-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #202124;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  padding: 0 12px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+}
+
+.exel {
+  position: relative;
+  color: #888;
+  height: 100%;
+  max-width: 100%;
+  font-size: .8rem;
+}
+/*# sourceMappingURL=index.css.map */
